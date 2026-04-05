@@ -45,4 +45,4 @@ Two players enter names, take turns, and battle for eternal glory (or at least b
 
 ## 👤 Author
 
-Built by Cromwell Rodrigues as part of The Odin Project journey.
+
