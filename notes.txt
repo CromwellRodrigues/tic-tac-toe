@@ -1,0 +1,30 @@
+Object	Pattern	Responsibility
+Gameboard	Module (IIFE)	Holds the array, allows placing markers, resets the board.
+
+Players	Factory	Creates Player 1 and Player 2.
+
+
+GameController	Module (IIFE)	The Referee. Switches turns, checks for 3-in-a-row.
+
+
+DisplayController	Module (IIFE)	The "Screen." Talks to the DOM/HTML
+
+
+- GameController
+ 1- create players array 
+ 2- create winning cells array list - all to have same mark
+ 3- select activePlayer starting Index number  
+ 4- active player index number 
+ 5- switch active player - use ternary operator : activePlayerIndex = activePlayerIndex === 0 ? 1 : 0 
+ 6- start a play round function with index parameter 
+  7- player A puts a token/mark on a board cell 
+  8- can enter cell number between 0 to 8
+  9- check if the board cell is empty then place the marker 
+  10- check if the cell completes the winning array 
+  11- declare winner and stop game 
+  12- if not winning array, continue - change the active Player 
+  13- let the new active play put the mark. 
+  14 - if all cells are full, there is no winner- it is a tie 
+
+
+   
