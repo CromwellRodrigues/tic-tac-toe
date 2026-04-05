@@ -8,17 +8,17 @@
 </head>
 <body class="bg-gradient-to-bl from-cyan-50 via-sky-100 to-cyan-200 flex flex-col  items-center min-h-screen  ">
 
-    <div class="w-9/12 mx-auto text-center space-y-10" >
+    <div class="w-9/12 mx-auto max-w-4xl px-4 space-y-6 text-center md:space-y-10" >
 
         <div class="">
-            <h1 class="text-5xl text-cyan-800 mt-10  uppercase">Tic-Tac-Toe</h1>
+            <h1 class="text-3xl sm:text-4xl md:text-5xl text-cyan-800 mt-6 md:mt-10  uppercase">Tic-Tac-Toe</h1>
         </div>
 
         <!-- buttons -->
-        <div class="space-x-20">
-            <button id= "start-game"class="bg-cyan-700 text-2xl text-white w-fit px-16 py-4 hover:bg-cyan-800 rounded active:scale-105 transition-transform duration-200  uppercase ">Start Game</button>
+        <div class="flex flex-col sm:flex-row gap-8 sm:gap-6 justify-center items-center">
+            <button id= "start-game"class="bg-cyan-700 text-lg sm:text-2xl text-white w-full sm:w-auto px-6 py-3 sm:px-16 sm:py-4 hover:bg-cyan-800 rounded active:scale-105 transition-transform duration-200  uppercase ">Start Game</button>
 
-            <button id="reset-game" class="bg-rose-700 text-2xl text-white w-fit px-16 py-4 hover:bg-rose-800 rounded active:scale-105 transition-transform duration-200  uppercase "
+            <button id="reset-game" class="bg-rose-700 text-lg sm:text-2xl text-white w-full sm:w-auto px-6 py-3 sm:px-16 sm:py-4 hover:bg-rose-800 rounded active:scale-105 transition-transform duration-200  uppercase "
             >Reset Game</button> 
         </div>
 
@@ -26,21 +26,22 @@
         <div>
             <h2 id="player-turn"class="text-2xl text-cyan-800 capitalize"></h2>
 
-            <h2 id="result" class="text-3xl text-emerald-800  bg:emerald-200 uppercase"> </h2>
+            <h2 id="result" class="text-xl sm:text-2xl md:text-3xl  text-emerald-800   p-4 uppercase"> </h2>
         </div>
 
         <!-- players names -->
          <div  class="space-x-20 ">
-            <form id="player-form" class="flex justify-center flex gap-4 items-center">
-                <input type="text" id="player1-name" placeholder="Player 1 Name" class="px-4 py-2 text-2xl capitalize text-gray-700 rounded border border-cyan-300 focus:outline-none focus:ring-2 focus:ring-cyan-400">
-                <input type="text" id="player2-name" placeholder="Player 2 Name" class="px-4 py-2 text-2xl capitalize text-gray-700 rounded border border-cyan-300 focus:outline-none focus:ring-2 focus:ring-cyan-400">
+            <form id="player-form" class="flex flex-col sm:flex-row justify-center flex gap-4  items-stretch sm:items-center">
+                <input type="text" id="player1-name" placeholder="Player 1 Name" class="px-4 py-2 text-base sm:text-xl md:text-2xl capitalize text-gray-700 rounded border border-cyan-300 focus:outline-none focus:ring-2 focus:ring-cyan-400">
+                <input type="text" id="player2-name" placeholder="Player 2 Name" class="px-4 py-2 text-base sm:text-xl md:text-2xl capitalize text-gray-700 rounded border border-cyan-300 focus:outline-none focus:ring-2 focus:ring-cyan-400">
+            </form>
               
 
 
          </div>
 
         <!-- game board -->
-        <div id="gameboard-ui" class="mx-auto grid grid-cols-3 grid-rows-3 gap-4 bg-sky-400 shadow-lg p-4 rounded w-96 ">
+        <div id="gameboard-ui" class="mx-auto grid grid-cols-3 grid-rows-3 gap-2 sm:gap-4 bg-sky-400 shadow-lg p-3 sm:p-4 rounded w-[min(92vw,24rem)]  ">
             
            
         </div>
